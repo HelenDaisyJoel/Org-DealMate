@@ -22,8 +22,7 @@ public class Hooks {
 	@Before
     public void setup() throws IOException
     {
-    	driver=BaseClass.initilizeBrowser();
-    	    	
+    	driver=BaseClass.initilizeBrowser();    	    	
     	p=BaseClass.getProperties();
     	driver.get(p.getProperty("appURL"));
     	driver.manage().window().maximize();
@@ -33,8 +32,7 @@ public class Hooks {
     
     @After
     public void tearDown() {
-        		
-       driver.quit();
+        driver.quit();
        
     }
     
