@@ -39,6 +39,10 @@ public class LoginSteps {
 	public void the_user_should_be_redirected_to_the_my_account_page() {
 		boolean logo=driver.findElement(By.xpath("//img[@class='c-sidebar-brand-full']")).isDisplayed();
 		Assert.assertTrue("true", logo);
+
+		
+		
+	    
 	}
 
 	@Then("the user should see a userloginPage")
